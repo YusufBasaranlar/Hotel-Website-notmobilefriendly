@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Oswald:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(---renktextgold);
+  opacity: 1.1;
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(---renkwhıte);
+  line-height: 1.6;
+  position: inherit;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(---renkwhıte);
+  text-decoration: none;
+}
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+p {
+  margin: 1rem 0;
+}
+img {
+  width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+.Logo {
+  width: 14rem;
+  top: 1px;
+}
+.Logo img {
+  width: 14rem;
+  align-items: center;
+  align-self: center;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(---renktextgold);
+  opacity: 0.9;
+  color: var(---renkwhıte);
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 130px;
+  padding: 0 3rem;
+  box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+}
+.navbar a {
+  color: var(---renkwhıte);
+  padding: 1rem 2rem;
+}
+.navbar a:hover {
+  border-bottom: 3px solid var(---renkwhıte);
+  transition: all 0.2s;
+}
+.navbar ul {
+  display: flex;
+}
+.main-header {
+  background-image: url(https://wallpaperaccess.com/full/658374.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: var(---renkwhıte);
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+}
+.main-header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.main-header::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.main-header * {
+  z-index: 5;
+}
+.main-header h1 {
+  font-size: 5.5rem;
+}
+.main-header .content p {
+  font-size: 3.5rem;
+  max-width: 60rem;
+  margin: 2rem 0 3rem;
+}
+
+.contact-form {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form .form-control {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  border: 1px solid #f5f5f5;
+}
+
+.contact-form .btn {
+  margin-top: 20px;
+}
+
+.contact h2 {
+  font-size: 4rem;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+
+.footer a {
+  color: var(--danger);
+}
+
+.footer a:hover {
+  opacity: 0.7;
+}
+
+.footer .social a {
+  margin-right: 10px;
+}
+/* Mobile */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+  .Logo {
+    position: relative;
+    top: -28px;
+  }
+  .navbar {
+    flex-direction: column;
+    height: 187px;
+    padding: 14px;
+  }
+  .navbar a {
+    padding: 10px;
+    margin: 0 3px;
+  }
+  .teams img {
+    width: 50%;
+  }
+}
+.main-header.blog {
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/360/515/601/night-in-las-vegas-bellagio-luxury-hotel-casino-hd-wallpapers-for-mobile-phones-laptops-and-pc-1920%C3%971080-wallpaper-preview.jpg);
+  background-color: black;
+  background-position: top;
+}
+/* artıcle */
+.article {
+  padding: 1rem 10rem;
+}

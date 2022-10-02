@@ -1,0 +1,213 @@
+:root {
+  ---renktextblck: #000000;
+  ---renktextgold: #cf7500;
+  ---renktextsarık: #f0a500;
+  ---renkwhıte: #f4f4f4;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30 px;
+  border: none;
+  border-radius: 15px;
+  width: 15rem;
+  height: 3rem;
+}
+.btn:hover {
+  opacity: 0.6;
+}
+.btn-satınal {
+  color: var(---renkwhıte);
+  background-color: var(---renktextgold);
+}
+.flex-items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-items > div {
+  padding: 20px;
+  flex-basis: 100%;
+}
+.flex-items i {
+  color: var(---renkwhıte);
+  padding: 20px;
+}
+
+.flex-items i:hover {
+  color: var(---renktextsarık);
+}
+.column {
+  background-color: var(---renkwhıte);
+  opacity: 0.9;
+  color: var(---renktextgold);
+}
+.flex-columns .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+.flex-columns .column {
+  flex: 1;
+}
+.flex-columns .column1,
+.flex-columns .column2 {
+  height: 100%;
+}
+.colorbast {
+  background-color: var(---renktextsarık);
+  width: 100%;
+  height: 10px;
+  display: list-item;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  opacity: 0.6;
+}
+.flex-columns .column2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+}
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.flex-columns h2 {
+  font-size: 4rem;
+  font-weight: 400px;
+}
+.flex-columns.article .column:nth-child(odd) {
+  flex: 1;
+}
+.flex-columns.article .column:nth-child(even) {
+  flex: 3;
+}
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+}
+.section-header h1 {
+  font-size: 5rem;
+  margin: 1rem 0;
+}
+.section-padding {
+  padding: 2rem 2rem 4rem;
+  background-color: #f4f4f4;
+  color: var(---renktextgold);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+}
+#flex-grid .column {
+  flex: 15%;
+  padding: 0 5rem;
+}
+#flex-grid .row img {
+  width: 30rem;
+}
+.gallery img {
+  transition: transform 0.2s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.gallery img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#rooms img {
+  clip-path: polygon(0 0, 100% 0%, 91% 93%, 0% 100%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-body {
+  padding: 2rem;
+}
+.teams h2 {
+  color: #000000;
+}
+.teams img {
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    76% 81%,
+    52% 100%,
+    23% 82%,
+    0% 75%
+  );
+}
+.teams img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+<!-- anımato -- > a {
+  border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  padding: 16px;
+  width: 220px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+a {
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+a:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+a:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+@media screen and (max-width: 768px) {
+  .flex-items {
+    flex-direction: column;
+  }
+  .flex-items > div {
+    padding: 10px;
+  }
+  .flex-columns .column {
+    flex: 100% !important;
+  }
+  #flex-grid .row {
+    flex: 50%;
+  }
+}
